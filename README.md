@@ -2,13 +2,13 @@
 <!DOCTYPE html>
 <html>
 <body>
-	<h1>AI21 Speech Recording Chrome Extension</h1>
-	<p>This Chrome Extension uses AI21 API to record speech during a meeting or video, store it in a Redis database and then ask any questions.</p>
+	<h1>Gods Eye</h1>
+	<p>This Chrome Extension uses Google Vertex API to create meeting minutes for you without any hassle.</p>
 	<h2>Features</h2>
 	<ul>
 		<li>Record speech during meetings or videos</li>
 		<li>Store recordings in a Redis database</li>
-		<li>Ask any questions related to the recording</li>
+		<li>Creates meeting minutes for you</li>
 	</ul>
 	<h2>Installation</h2>
 	<ol>
@@ -26,12 +26,11 @@
 		<li>The extension will start recording your speech</li>
 		<li>Click on "Stop Recording" when you're done</li>
 		<li>The recording will be saved in the Redis database</li>
-		<li>You can now ask any questions related to the recording by clicking on "Ask a Question" and typing in your question</li>
 	</ol>
 	<h2>Credits</h2>
 	<p>This Chrome Extension uses the following technologies:</p>
 	<ul>
-		<li>AI21 API</li>
+		<li>Google Vertex API</li>
 		<li>Redis database, Flask Server</li>
 		<li>HTML, CSS, JavaScript</li>
 		<li>Google Chrome Extension </li>
