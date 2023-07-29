@@ -3,7 +3,7 @@
 <html>
 <body>
 	<h1>Gods Eye</h1>
-	<p>This Chrome Extension uses Google Vertex API to create meeting minutes for you without any hassle.</p>
+	<p>This Chrome Extension uses Google Vertex API to create meeting minutes for you without any hassle. <a href=https://www.youtube.com/watch?v=1APj6m8hJuI>Demo Video</a></p>
 	<h2>Features</h2>
 	<ul>
 		<li>Record speech during meetings or videos</li>
