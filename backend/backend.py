@@ -50,34 +50,46 @@ def ask(transcript, prompt):
     
 
 def write_text(client, page_id, text, type):
-    client.blocks.children.append(
-        block_id=page_id,
-        children=[
-            {
-                "object": "block",
-                "type": "paragraph",
-                "paragraph": {
-                    "rich_text": [
-                        {
-                            "type": "text",
-                            "text": {
-                                "content": text
+    text = text.split("\n")
+    for sentence in text:
+        client.blocks.children.append(
+            block_id=page_id,
+            children=[
+                {
+                    "object": "block",
+                    "type": "paragraph",
+                    "paragraph": {
+                        "rich_text": [
+                            {
+                                "type": "text",
+                                "text": {
+                                    "content": sentence
+                                }
                             }
-                        }
-                    ]
+                        ]
+                    }
                 }
-            }
-        ]
-    )
-
+            ]
+        )
+        
+def rawText(transcript):
+    result = "**__Meeting Minutes__**\n\n**Summary**\n"
+    summary = ask(transcript, "Provide a descriptive summary of this transcript")
+    result += summary
+    answer = ask(transcript, "Give me a detailed summary of the meeting in bullet points")
+    result+= f"\n{answer}"
+    result += "\n\n**Responsibilities**\n"
+    answer = ask(transcript, "What are the tasks and people responsible for them?")
+    result += answer
+    return result
 
 @app.route('/notion', methods=["POST"])
 def notion():
     url = request.get_json()['url']
     transcript = get_transcription(url)
     client = Client(auth=notion_token)
-
-    write_text(client, notion_page_id, transcript, 'to_do')
+    content = rawText(transcript)
+    write_text(client, notion_page_id, content, 'to_do')
     # Return a response
     return jsonify({"status": 1, "message": "Export to Notion completed successfully"})
 
