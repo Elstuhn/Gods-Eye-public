@@ -37,7 +37,7 @@
 	</ul>
 	<h2>Examples</h2>
 	<img width="345" alt="image" src="https://github.com/Elstuhn/Gods-Eye-public/assets/66341506/4d731d81-02e7-4bd4-8d85-330461a05f78">
-	<img width="345" alt="image" src="https://github.com/Elstuhn/Gods-Eye-public/assets/66341506/fd62434b-330d-4bc2-88b3-8a6a43cc8932">
+	<img width="750" alt="image" src="https://github.com/Elstuhn/Gods-Eye-public/assets/66341506/fd62434b-330d-4bc2-88b3-8a6a43cc8932">
 
 
 </body>
