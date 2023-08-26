@@ -35,5 +35,9 @@
 		<li>HTML, CSS, JavaScript</li>
 		<li>Google Chrome Extension </li>
 	</ul>
+	<h2>Examples</h2>
+	<img width="345" alt="image" src="https://github.com/Elstuhn/Gods-Eye-public/assets/66341506/4d731d81-02e7-4bd4-8d85-330461a05f78">
+	![image](https://github.com/Elstuhn/Gods-Eye-public/assets/66341506/cc8154d6-8647-4376-b528-3401c118a52b)
+
 </body>
 </html>
